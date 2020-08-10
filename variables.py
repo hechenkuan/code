@@ -19,6 +19,6 @@ print(a)
 print(type(a))
 
 # 字符串
-a ='乐德学堂'
+a = '乐德学堂'
 print(a)
 print(type(a))
