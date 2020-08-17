@@ -58,3 +58,9 @@ i = 1000
 for x in range(15):
     i +=1
     print(i * 0.165)
+
+from time import time
+t = time()
+for i in range(10**8):
+    pass
+print(time() - t, '秒')
