@@ -1,0 +1,15 @@
+import turtle
+t = turtle.Pen()
+t.speed(0)
+turtle.bgcolor('black')
+shaodiaoyonghu = input('沙雕，你叫什么?')
+duoshangbian = int(input('指定多少条边'))
+colors = ('red', 'blue', 'green', 'yellow', 'brown', 'purple', 'pink', 'gray')
+for i in range(10000):
+    t.pencolor(colors[i % duoshangbian])
+    t.penup()
+    t.fd(i*4)
+    t.pendown()
+    t.write(shaodiaoyonghu, font=('FangSong', (i + 4)//4,'bold'))
+    t.left(375//duoshangbian)
+turtle.mainloop()
